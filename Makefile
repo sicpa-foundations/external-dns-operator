@@ -199,7 +199,7 @@ endef
 
 OPM=$(BIN_DIR)/opm
 opm: ## Download opm locally if necessary.
-	$(call get-bin,$(OPM),$(BIN_DIR),https://github.com/operator-framework/operator-registry/releases/download/$(OPM_VERSION)/linux-amd64-opm)
+	$(call get-bin,$(OPM),$(BIN_DIR),https://github.com/operator-framework/operator-registry/releases/download/$(OPM_VERSION)/darwin-amd64-opm)
 
 define get-bin
 @[ -f "$(1)" ] || { \
